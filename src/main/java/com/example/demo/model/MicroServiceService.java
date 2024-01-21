@@ -7,6 +7,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Arrays;
 import java.util.Optional;
@@ -21,7 +22,8 @@ public class MicroServiceService  {
 
 
     public ZonedDateTime getNow() {
-        return ZonedDateTime.now();
+        ZonedDateTime now = ZonedDateTime.now(ZoneId.of("Asia/Tehran"));
+        return now;
     }
 
     public String getUp() {
