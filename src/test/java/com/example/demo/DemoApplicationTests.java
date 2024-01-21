@@ -12,6 +12,7 @@ class DemoApplicationTests {
 	@Test
 	void contextLoads() {
 		ZonedDateTime now = ZonedDateTime.now(ZoneId.of("Asia/Tehran"));
+		System.out.println(now+"################################################################################################");
 		System.out.println(now);
 	}
 
